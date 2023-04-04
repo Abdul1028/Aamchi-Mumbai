@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Bootstrap 5 Carousel Slider</title>
+</head>
+<body>
+
+    <!-- Header start-->
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item c-item">
+        <img src="images/juhu.jpg" class="d-block w-100 c-img" alt="Slide 3">
+        <div class="carousel-caption top-0 mt-4">
+            <p class="mx-auto fs-3 text-uppercase" style="color: black;" >Mumbai: The city of Dreams</p>
+            <h1 class="display-1 fs-7 fw-bolder text-capitalize" >Refresh Releieve Re-Run</h1>
+        </div>
+      </div>
+
+      <div class="carousel-item active c-item">
+        <img src="images/marines.jpg" class="d-block w-100 c-img" alt="Slide 1">
+        <div class="carousel-caption top-0 mt-5">
+          <p class="mx-auto fs-3 text-uppercase" >Mumbai: The city of Dreams</p>
+          <h1 class="display-1 fs-7 fw-bolder text-capitalize" >Earn Explore Excel</h1>
+        
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images/sealink.jpg" class="d-block w-100 c-img" alt="Slide 2">
+ 
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Navabar & header end-->
+
+
+  <div class="casino_section layout_padding">
+    <div class="container">
+       <h1 class="casino_taital"><img src="images/icon-1.png"> <span>Student Section</span></h1>
+       <p class="game_text">You can view colleges libraries and  coaching centers if logged in you can edit the details too </p>
+       <div class="casino_section_2 layout_padding">
+          <div class="row">
+             <div class="col-sm-4">
+                <div class="box_main">
+                   <h4 class="basic_text">Collges</h4>
+                   <h1 class="date_text"><span class="font_size_20"></span>Top<span class="font_size_40">25</span>Colleges</h1>
+                   <p class="lorem_text">Click below to see the list of colleges available in Mumbai</p>
+                </div>
+                <div class="buynow_bt"><a href="view_colleges.jsp">View Collges</a></div>
+             </div>
+
+
+             <div class="col-sm-4">
+               <!-- <div class="box_main">
+                  <h4 class="basic_text">Coaching centers</h4>
+                  <h1 class="date_text"><span class="font_size_20"></span><span class="font_size_40">35</span> Coaching classes</h1>
+                  <p class="lorem_text">Need help finding best institutions see here!</p>
+               </div> -->
+               <form class="mineform" action="student_login.jsp">
+                  <h4 class="basic_text">Login</h4>
+                  <input class="mineinput" type="text" name="student_user" placeholder="Username">
+                  <input class="mineinput" type="text" name="student_pass" placeholder="Password">
+                  <br>
+                  <input class="minebutton" type="submit">
+               </form>
+            </div>
+
+             <div class="col-sm-4">
+                <div class="box_main">
+                   <h4 class="basic_text">Libraries</h4>
+                   <h1 class="date_text"><span class="font_size_20"></span>Best<span class="font_size_40">10</span>Libraries</h1>
+                   <p class="lorem_text">Want perfect place to read and borrow books??</p>
+                </div>
+                <div class="buynow_bt"><a href="#">View Libraries</a></div>
+             </div>
+
+
+      
+          </div>
+       </div>
+    </div>
+ </div>
+
+ 
+  <!-- Footer start-->
+
+
+  <footer>
+  <div class="footer_section layout_padding footerr">
+    <div class="container">
+       <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+             <span class="input-group-text" id="basic-addon2">Subscribe</span>
+          </div>
+       </div>
+       <div class="social_icon">
+          <ul>
+             <li><a href="#"><img src="images/fb-icon.png"></a></li>
+             <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+             <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+             <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+          </ul>
+       </div>
+       <div class="location_section">
+          <ul>
+             <li><a href="#"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></li>
+             <li><a href="#"><img src="images/call-icon.png"><span class="padding_left_15">(+71 9876543210)</span></a></li>
+             <li><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Location</span></a></li>
+          </ul>
+       </div>
+       <!-- copyright section start -->
+       <div class="copyright_section">
+          <h1 class="copyright_text">Copyright 2022 All Right Reserved By  ARS
+          </h1>
+       </div>
+       <!-- copyright section end -->
+    </div>
+  </footer>
+    <!--Footer end-->
+
+
+
+</body>
+</html>
